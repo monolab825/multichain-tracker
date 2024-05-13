@@ -13,6 +13,11 @@ const SearchBar = ({onSearch}: SearchProps) => {
             <button onClick={onSearch} className="btn">
               <FaMagnifyingGlassDollar />
             </button>
+            <span className="badge">ethereum</span>
+            <span className="badge">polygon</span>
+            <span className="badge">bsc</span>
+            <span className="badge">avalanche</span>
+            <span className="badge">optimism</span>
           </div>
         </div>
       </section>
