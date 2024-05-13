@@ -14,7 +14,7 @@ const TokenList = ({accountAddress}: ListProps) => {
     <section>
       <div>
         <GoldRushProvider
-          apikey={process.env.COVALENT_API_KEY}
+          apikey={import.meta.env.VITE_COVALENT_KEY}
           mode="dark"
           color="emerald"
         >
