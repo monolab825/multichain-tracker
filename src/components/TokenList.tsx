@@ -4,7 +4,6 @@ import {
     TokenBalancesListView,
 } from "@covalenthq/goldrush-kit";
 
-
 type ListProps = {
   accountAddress: string;
 }

@@ -1,4 +1,5 @@
 import { FaMagnifyingGlassDollar } from "react-icons/fa6";
+import ChainsBadges from "./ChainsBadges";
 
 type SearchProps = {
   onSearch: () => void;
@@ -13,11 +14,7 @@ const SearchBar = ({onSearch}: SearchProps) => {
             <button onClick={onSearch} className="btn">
               <FaMagnifyingGlassDollar />
             </button>
-            <span className="badge">ethereum</span>
-            <span className="badge">polygon</span>
-            <span className="badge">bsc</span>
-            <span className="badge">avalanche</span>
-            <span className="badge">optimism</span>
+           <ChainsBadges />
           </div>
         </div>
       </section>
