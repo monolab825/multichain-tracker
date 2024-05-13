@@ -10,7 +10,8 @@ function App() {
   
   const handleSearch =  (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
     //setAccountAddress(document.getElementById("accountAddress").value);
-    setShowAssets(true);  
+    setShowAssets(true);
+    console.log(e);  
   }
   
   return (
