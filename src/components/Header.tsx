@@ -14,7 +14,7 @@ const Header = () => {
       <div className="navbar bg-base-100">
           <div className="flex-1">
             <input type="text" placeholder="Type wallet address here" className="input input-bordered w-full max-w-xs" />
-            <button onClick={() => onSearch()} className="btn">
+            <button className="btn">
               <FaMagnifyingGlassDollar />
             </button>
           </div>
