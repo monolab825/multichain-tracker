@@ -1,6 +1,10 @@
-const TokenList = () => {
+type ListProps = {
+  accountAddress: string;
+}
+
+const TokenList = ({accountAddress}: ListProps) => {
   return (
-    <div>TokenList</div>
+    <div>TokenList: {accountAddress}</div>
   )
 }
 

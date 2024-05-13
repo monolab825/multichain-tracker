@@ -5,11 +5,11 @@ import TokenList from "./components/TokenList"
 import Footer from "./components/Footer"
 function App() {
 
-  //const [accountAddress, setAccountAddress] = useState(false)
+  const [accountAddress, setAccountAddress] = useState(false)
   const [showAssets, setShowAssets] = useState(false)
   
   const handleSearch =  (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
-    //setAccountAddress(document.getElementById("accountAddress").value);
+    setAccountAddress(document.getElementById("accountAddress").value);
     setShowAssets(true);
     console.log(e);  
   }
@@ -20,7 +20,7 @@ function App() {
       <Header />
       <SearchBar onSearch={handleSearch} />
       <main className="flex-grow min-h-12">
-        {showAssets && <TokenList />}
+        {showAssets && <TokenList accountAddress={accountAddress}/>}
       </main>
       <Footer />
     </div>  
