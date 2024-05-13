@@ -5,13 +5,12 @@ import TokenList from "./components/TokenList"
 import Footer from "./components/Footer"
 function App() {
 
-  const [accountAddress, setAccountAddress] = useState(false)
+  const [accountAddress, setAccountAddress] = useState('')
   const [showAssets, setShowAssets] = useState(false)
   
-  const handleSearch =  (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
+  const handleSearch = () => {
     setAccountAddress(document.getElementById("accountAddress").value);
     setShowAssets(true);
-    console.log(e);  
   }
   
   return (

@@ -1,8 +1,9 @@
 import { FaMagnifyingGlassDollar } from "react-icons/fa6";
 
 type SearchProps = {
-  onSearch: (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
+  onSearch: () => void;
 }
+//   onSearch: (e:React.MouseEvent<HTMLButtonElement, MouseEvent>) => void;
 
 const SearchBar = ({onSearch}: SearchProps) => {
   return (
