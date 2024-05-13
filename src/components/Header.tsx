@@ -1,3 +1,4 @@
+import { FaMagnifyingGlassDollar } from "react-icons/fa6";
 import logo from "../assets/logo.png"
 
 const Header = () => {
@@ -10,6 +11,14 @@ const Header = () => {
         <img src={logo} className="logo"/>
         <a className="btn btn-ghost text-xl"> Explore your assets in EVM compatible chains.</a>
       </div>
+      <div className="navbar bg-base-100">
+          <div className="flex-1">
+            <input type="text" placeholder="Type wallet address here" className="input input-bordered w-full max-w-xs" />
+            <button onClick={() => onSearch()} className="btn">
+              <FaMagnifyingGlassDollar />
+            </button>
+          </div>
+        </div>
     </header>
   )
 }
