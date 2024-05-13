@@ -1,6 +1,6 @@
 const ChainsBadges = () => {
   return (
-    <span>
+    <span className="m-2">
       <span className="badge">ethereum</span>
       <span className="badge">polygon</span>
       <span className="badge">bsc</span>
