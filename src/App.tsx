@@ -9,7 +9,8 @@ function App() {
   const [showAssets, setShowAssets] = useState(false)
   
   const handleSearch = () => {
-    setAccountAddress(document.getElementById("accountAddress").value);
+    var inputValue = (document.getElementById('accountAddress') as HTMLInputElement).value
+    setAccountAddress(inputValue);
     setShowAssets(true);
   }
   
